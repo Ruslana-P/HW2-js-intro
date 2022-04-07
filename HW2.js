@@ -1,29 +1,28 @@
-/*
-//Exersice 5
-var a=HW2-js-intro
+console.log('------------- #5')
+var a=2
 var b=3
 console.log(a+b);
 console.log(a-b);
 console.log(a*b);
 console.log(a/b); 
 
-//exersice 6
+
+
+console.log('------------- #6')
 
 for (let i=1; i<6; i++){
     console.log(i);
 }
 
 
-//exersice 7
+
+console.log('------------- #7')
 for (let i=5; i>0; i--){
     console.log(i);
 }
 
 
-
-
-
-//exersice 8
+console.log('------------- #8')
 
 function getMarkInfo(condition) {
     if (condition==10) {
@@ -38,7 +37,8 @@ getMarkInfo(10)
 getMarkInfo(1) 
 
 
-//Exersice 9
+
+console.log('------------- #9')
 
 function getDayInfo(position) {
     switch (position){
@@ -48,7 +48,7 @@ function getDayInfo(position) {
         case 1:
             console.log("Monday");
             break;
-        case HW2-js-intro:
+        case 2:
             console.log("Tuesday");
             break;
         case 3:
@@ -69,44 +69,42 @@ function getDayInfo(position) {
 }
 getDayInfo(0)
 getDayInfo(1)
-getDayInfo(HW2-js-intro)
+getDayInfo(2)
 getDayInfo(3)
 getDayInfo(4)
 getDayInfo(5)
 getDayInfo(6)
 
 
-
-//Exersice 10
-
+console.log('------------- #10')
 let arr=['a', 'b', 'c'];
-arr.push(1, HW2-js-intro, 3);   // Numberts were added, not text
+arr.push(1, 2, 3);   // Numberts were added, not text
 console.log(arr);
 
 
 
-//Exersice 11
-let arrA=[1, HW2-js-intro, 3];
+console.log('------------- #11')
+let arrA=[1, 2, 3];
 let arrB=[4,5,6];
 let arrNew=arrA.concat(arrB);
 console.log(arrNew);
-*/
 
 
-//Exersice 12
 
-function countNumber(number) {
-    //if (number%1=0 & number>0){
-        
-        do{
-            let i=1
-            console.log(i + ++i);
-        } while (i=number)
-  }
-  countNumber(3)
-  countNumber(5)
+console.log('------------- #12')
 
+function countNumber(number){
+    let ARR=[1];
+    let i=1;
 
+    do{
+        ARR.push(i+=1);
+    } while (i<number)
+    //console.log(ARR);
+    let sum=ARR.reduce((a,b)=>a+b, 0);
+    console.log(sum);
+}
+    countNumber(3)
 
 
 
